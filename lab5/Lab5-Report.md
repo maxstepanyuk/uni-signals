@@ -306,7 +306,7 @@ figure, imshow(cameramanQuantMedium, [0 255]), title(['Квантований Ca
 figure, imshow(cameramanQuantLarge, [0 255]), title(['Квантований Cameraman, N = ', num2str(N_img_large)]);
 ```
 
-![figure_22.png](Lab5-Report_media/figure_22.png)
+![figure_22.png](Lab5-Report_media/figure_22_new.png)
 
   
 
@@ -324,19 +324,19 @@ dctCameramanImgQuantLarge = dct2(cameramanQuantLarge);
 figure, imshow(log(abs(dctCameramanImgQuantSmall)), []), title(['ДКП від квантованого вихідного зображення, N = ', num2str(N_img_small)]);
 ```
 
-![figure_23.png](Lab5-Report_media/figure_23.png)
+![figure_23.png](Lab5-Report_media/figure_23_new.png)
 
 ```matlab:Code
 figure, imshow(log(abs(dctCameramanImgQuantMedium)), []), title(['ДКП від квантованого вихідного зображення, N = ', num2str(N_img_medium)]);
 ```
 
-![figure_24.png](Lab5-Report_media/figure_24.png)
+![figure_24.png](Lab5-Report_media/figure_24_new.png)
 
 ```matlab:Code
 figure, imshow(log(abs(dctCameramanImgQuantLarge)), []), title(['ДКП від квантованого вихідного зображення, N = ', num2str(N_img_large)]);
 ```
 
-![figure_25.png](Lab5-Report_media/figure_25.png)
+![figure_25.png](Lab5-Report_media/figure_25_new.png)
 
 ## 9.3 Порівняння з квантуванням вихідного зображення:
 
