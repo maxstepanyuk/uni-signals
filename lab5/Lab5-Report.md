@@ -20,34 +20,25 @@ grayImage2 = imread('moon.tif');
 ```matlab:Code
 figure, imshow(colorImage1), title('Кольорове зображення 1 - Peppers');
 ```
-
-!['/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_0.png'
-](Lab5-Report_media/'/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_0.png'
-)
+![figure_0.png](Lab5-Report_media/figure_0.png)
 
 ```matlab:Code
 figure, imshow(colorImage2), title('Кольорове зображення 2 - Autumn');
 ```
 
-!['/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_1.png'
-](Lab5-Report_media/'/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_1.png'
-)
+![figure_1.png](Lab5-Report_media/figure_1.png)
 
 ```matlab:Code
 figure, imshow(grayImage1), title('Чорно-біле зображення 1 - Cameraman');
 ```
 
-!['/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_2.png'
-](Lab5-Report_media/'/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_2.png'
-)
+![figure_2.png](Lab5-Report_media/figure_2.png)
 
 ```matlab:Code
 figure, imshow(grayImage2), title('Чорно-біле зображення 2 - Moon');
 ```
 
-!['/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_3.png'
-](Lab5-Report_media/'/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_3.png'
-)
+![figure_3.png](Lab5-Report_media/figure_3.png)
 
 # 2. З використанням функції rgb2gray перетворіть кольорові зображення в чорно-білі
 
@@ -62,17 +53,13 @@ grayAutumn = rgb2gray(colorImage2);
 figure, imshow(grayPeppers), title('Чорно-білий варіант Peppers');
 ```
 
-!['/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_4.png'
-](Lab5-Report_media/'/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_4.png'
-)
+![figure_4.png](Lab5-Report_media/figure_4.png)
 
 ```matlab:Code
 figure, imshow(grayAutumn), title('Чорно-білий варіант Autumn');
 ```
 
-!['/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_5.png'
-](Lab5-Report_media/'/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_5.png'
-)
+![figure_5.png](Lab5-Report_media/figure_5.png)
 
 # 3.1 З використанням функції dct2 виконайте дискретне косинусне перетворення зображень.
 
@@ -102,33 +89,25 @@ dctMoon = dct2(grayImage2Double);
 figure, imshow(log(abs(dctPeppers)), []), title('ДКП Peppers (лог. масштаб)');
 ```
 
-!['/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_6.png'
-](Lab5-Report_media/'/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_6.png'
-)
+![figure_6.png](Lab5-Report_media/figure_6.png)
 
 ```matlab:Code
 figure, imshow(log(abs(dctAutumn)), []), title('ДКП Autumn (лог. масштаб)');
 ```
 
-!['/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_7.png'
-](Lab5-Report_media/'/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_7.png'
-)
+![figure_7.png](Lab5-Report_media/figure_7.png)
 
 ```matlab:Code
 figure, imshow(log(abs(dctCameraman)), []), title('ДКП Cameraman (лог. масштаб)');
 ```
 
-!['/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_8.png'
-](Lab5-Report_media/'/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_8.png'
-)
+![figure_8.png](Lab5-Report_media/figure_8.png)
 
 ```matlab:Code
 figure, imshow(log(abs(dctMoon)), []), title('ДКП Moon (лог. масштаб)');
 ```
 
-!['/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_9.png'
-](Lab5-Report_media/'/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_9.png'
-)
+![figure_9.png](Lab5-Report_media/figure_9.png)
 
   
 # 4. З використанням функції idct2 відновіть зображення за його ДКП-спектру.
@@ -146,33 +125,25 @@ reconstructedMoon = idct2(dctMoon);
 figure, imshow(reconstructedPeppers, [0 255]), title('Відновлений Peppers');
 ```
 
-!['/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_10.png'
-](Lab5-Report_media/'/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_10.png'
-)
+![figure_10.png](Lab5-Report_media/figure_10.png)
 
 ```matlab:Code
 figure, imshow(reconstructedAutumn, [0 255]), title('Відновлений Autumn');
 ```
 
-!['/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_11.png'
-](Lab5-Report_media/'/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_11.png'
-)
+![figure_11.png](Lab5-Report_media/figure_11.png)
 
 ```matlab:Code
 figure, imshow(reconstructedCameraman, [0 255]), title('Відновлений Cameraman');
 ```
 
-!['/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_12.png'
-](Lab5-Report_media/'/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_12.png'
-)
+![figure_12.png](Lab5-Report_media/figure_12.png)
 
 ```matlab:Code
 figure, imshow(reconstructedMoon, [0 255]), title('Відновлений Moon');
 ```
 
-!['/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_13.png'
-](Lab5-Report_media/'/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_13.png'
-)
+![figure_13.png](Lab5-Report_media/figure_13.png)
 
 # 5.1 З використанням процедури целочислового ділення/множення J=N*round(J*N); виконайте квантування результатів ДКП для різних значень кроку квантування N. 
 
@@ -218,25 +189,19 @@ dctCameramanQuantLarge = N_large * round(dctCameraman / N_large);
 figure, imshow(log(abs(dctCameramanQuantSmall)), []), title(['Квантований ДКП Cameraman, N = ', num2str(N_small)]);
 ```
 
-!['/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_14.png'
-](Lab5-Report_media/'/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_14.png'
-)
+![figure_14.png](Lab5-Report_media/figure_14.png)
 
 ```matlab:Code
 figure, imshow(log(abs(dctCameramanQuantMedium)), []), title(['Квантований ДКП Cameraman, N = ', num2str(N_medium)]);
 ```
 
-!['/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_15.png'
-](Lab5-Report_media/'/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_15.png'
-)
+![figure_15.png](Lab5-Report_media/figure_15.png)
 
 ```matlab:Code
 figure, imshow(log(abs(dctCameramanQuantLarge)), []), title(['Квантований ДКП Cameraman, N = ', num2str(N_large)]);
 ```
 
-!['/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_16.png'
-](Lab5-Report_media/'/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_16.png'
-)
+![figure_16.png](Lab5-Report_media/figure_16.png)
 
 ## 6.2 Поясніть вигляд отриманих даних.
 
@@ -262,25 +227,19 @@ reconstructedQuantLarge = idct2(dctCameramanQuantLarge);
 figure, imshow(reconstructedQuantSmall, [0 255]), title(['Відновлений Cameraman, N = ', num2str(N_small)]);
 ```
 
-!['/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_17.png'
-](Lab5-Report_media/'/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_17.png'
-)
+![figure_17.png](Lab5-Report_media/figure_17.png)
 
 ```matlab:Code
 figure, imshow(reconstructedQuantMedium, [0 255]), title(['Відновлений Cameraman, N = ', num2str(N_medium)]);
 ```
 
-!['/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_18.png'
-](Lab5-Report_media/'/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_18.png'
-)
+![figure_18.png](Lab5-Report_media/figure_18.png)
 
 ```matlab:Code
 figure, imshow(reconstructedQuantLarge, [0 255]), title(['Відновлений Cameraman, N = ', num2str(N_large)]);
 ```
 
-!['/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_19.png'
-](Lab5-Report_media/'/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_19.png'
-)
+![figure_19.png](Lab5-Report_media/figure_19.png)
 
 ## 7.2 Поясніть отримані результати.
 
@@ -335,25 +294,19 @@ cameramanQuantLarge = N_img_large * round(grayImage1Double / N_img_large);
 figure, imshow(cameramanQuantSmall, [0 255]), title(['Квантований Cameraman, N = ', num2str(N_img_small)]);
 ```
 
-!['/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_20.png'
-](Lab5-Report_media/'/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_20.png'
-)
+![figure_20.png](Lab5-Report_media/figure_20.png)
 
 ```matlab:Code
 figure, imshow(cameramanQuantMedium, [0 255]), title(['Квантований Cameraman, N = ', num2str(N_img_medium)]);
 ```
 
-!['/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_21.png'
-](Lab5-Report_media/'/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_21.png'
-)
+![figure_21.png](Lab5-Report_media/figure_21.png)
 
 ```matlab:Code
 figure, imshow(cameramanQuantLarge, [0 255]), title(['Квантований Cameraman, N = ', num2str(N_img_large)]);
 ```
 
-!['/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_22.png'
-](Lab5-Report_media/'/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_22.png'
-)
+![figure_22.png](Lab5-Report_media/figure_22.png)
 
   
 
@@ -371,25 +324,19 @@ dctCameramanImgQuantLarge = dct2(cameramanQuantLarge);
 figure, imshow(log(abs(dctCameramanImgQuantSmall)), []), title(['ДКП від квантованого вихідного зображення, N = ', num2str(N_img_small)]);
 ```
 
-!['/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_23.png'
-](Lab5-Report_media/'/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_23.png'
-)
+![figure_23.png](Lab5-Report_media/figure_23.png)
 
 ```matlab:Code
 figure, imshow(log(abs(dctCameramanImgQuantMedium)), []), title(['ДКП від квантованого вихідного зображення, N = ', num2str(N_img_medium)]);
 ```
 
-!['/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_24.png'
-](Lab5-Report_media/'/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_24.png'
-)
+![figure_24.png](Lab5-Report_media/figure_24.png)
 
 ```matlab:Code
 figure, imshow(log(abs(dctCameramanImgQuantLarge)), []), title(['ДКП від квантованого вихідного зображення, N = ', num2str(N_img_large)]);
 ```
 
-!['/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_25.png'
-](Lab5-Report_media/'/MATLAB Drive/uni-signals/lab5/Lab5-Report_media/figure_25.png'
-)
+![figure_25.png](Lab5-Report_media/figure_25.png)
 
 ## 9.3 Порівняння з квантуванням вихідного зображення:
 
